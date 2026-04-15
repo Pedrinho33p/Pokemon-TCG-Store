@@ -183,7 +183,7 @@ p {
 
 .col-3 {
     flex-basis: 30%;
-    max-width: 250px;
+    min-width: 250px;
     margin-bottom: 30px;
     transition: transform 0.5s;
 }
@@ -199,8 +199,7 @@ p {
 }
 
 .col-4 {
-    flex: 0 0 calc(25% - 20px); 
-    max-width: 250px; 
+    flex: 0 0 calc(25% - 20px);  
     min-width: 200px; 
     padding: 10px;
     margin-bottom: 50px;
@@ -325,6 +324,11 @@ small {
     font-size: 16px;
 }
 
+.rodape a {
+    color: var(--cor-fonte);
+    text-decoration: none;
+}
+
 .rodape p {
     color: var(--cor-fonte);
 }
@@ -341,4 +345,119 @@ small {
 
 .rodape-col-1 {
     flex-basis: 30%;
+}
+
+.rodape-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.rodape-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.rodape-col-3, .rodape-col-4 {
+    flex-basis: 12%;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.rodape hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--cor-btn-fonte);
+    margin: 20px 0;
+}
+
+.direitos {
+    text-align: center;
+}
+
+
+.menu-celular {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* Estilos para telas menores */
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #000;
+        width: 100%;
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height 0.5s; 
+        z-index: 1000;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: var(--cor-fonte);
+    }
+
+    .menu-celular {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .linha {
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+
+    .col-2 h1 {
+        font-size: 27px;
+    }
+
+    .rodape-col-3, .rodape-col-4 {
+        text-align: center;
+    }
+
+    .col-4 p {
+        font-size: 24px;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .corpo-produtos .linha {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .corpo-produtos .linha {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    
+    .col-4 {
+        width: 90%;
+    }
 }
