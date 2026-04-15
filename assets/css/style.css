@@ -12,8 +12,8 @@
     --cor-padrao-hover: #87CEEB;
     --cor-fonte: #fff;
     --cor-fonte-p: #272727;
-    --cor-btn:#00AEEF;
-    --cor-btn-hover:#008BBE;
+    --cor-btn:#daaa00;
+    --cor-btn-hover:#FFCB05;
     --cor-btn-fonte: #FFFFFF;
     --cor-fonte-corpo:#1555;
     --cor-fonte-corpo-leve:#777;
@@ -65,6 +65,22 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--cor-fonte);
+    transition: padding 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    padding: 5px 10px;
+    color: var(--cor-padrao-hover);
+}
+    
+.carrinho {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carrinho:hover {
+    transform: scale(1.2);
 }
 
 .banner p {
@@ -119,11 +135,12 @@ p {
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 20px;
-    transition: background 0.5s, padding 0.5s;
+    transition: background 0.5s, padding 0.5s, border-radius 0.5s;
 }
 
 .btn:hover {
     padding: 13px 35px;
+    border-radius: 35px;
     background-color: var(--cor-btn-hover);
     color: var(--cor-btn-fonte);
 }
@@ -233,3 +250,70 @@ p {
     background-color: transparent; 
     margin-bottom: 15px;
 }
+
+.ofertas {
+    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+    margin-top: 30px;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.col-2 .oferta-img{
+    padding: 50px;
+}
+
+small {
+    color: var(--cor-btn-fonte);
+}
+
+.ofertas p {
+    color: var(--cor-fonte-p);
+}
+
+.depoimentos {
+    padding-top: 40px;
+}
+
+.depoimentos .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.depoimentos .col-3:hover {
+    transform: scale(1.1);
+}
+
+.depoimentos .col-3 img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    border: 2px solid var(--cor-padrao);
+}
+
+.classificacao{
+    color: var(--cor-padrao);
+    margin: 10px 0;
+}
+
+.depoimento-icone {
+    font-size: 34px;
+    color: var(--cor-padrao);
+}
+
+.col-3 p {
+    font-size: 13px;
+    color: var(--cor-fonte-corpo-leve);
+    margin: 12px 0;
+}
+
+.depoimentos .col-3 h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #757575;
+}
+
