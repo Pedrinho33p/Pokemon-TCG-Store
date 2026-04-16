@@ -403,60 +403,52 @@ ul {
 
 /* Estilos para telas menores */
 
-@media only screen and (max-width: 800px){
-
+@media only screen and (max-width: 800px) {
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        position: relative; /* Isso é essencial */
-        background: #fff; /* Ou a cor de fundo do seu header original */
+        position: relative; 
         z-index: 1005; 
     }
 
-    nav ul{
+    nav ul {
         position: absolute;
-        top: 100%; /* Começa exatamente onde a navbar termina */
+        top: 100%;
         left: 0;
         background: #000;
         width: 100%;
         max-height: 0px;
         overflow: hidden;
         transition: max-height 0.5s;
-        z-index: 1000; /* Fica abaixo dos ícones da navbar */
-        display: block; /* Garante que os itens fiquem em lista */
+        z-index: 1000; 
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
-        margin-top: 10px;
-        margin-right: 50px;
-        margin-bottom: 10px;
+        margin: 15px 50px;
     }
 
     nav ul li a {
-        color: var(--cor-fonte);
+        color: #fff;
     }
 
-    .menu-celular {
-        display: block;
+    .menu-celular, .carrinho {
+        display: block !important;
         cursor: pointer;
         position: relative;
-        z-index: 1010; /* Garante que ele fique no topo da pilha */
+        z-index: 1010; 
     }
 
-    .menu-celular .carrinho {
-        display: block;
-        cursor: pointer;
-        position: relative;
-        z-index: 1001;
+    .carrinho {
+        margin-left: auto;
+        margin-right: 15px;
     }
 
-    .novoMenu nav ul li a{
-        color: var(--cor-fonte);
+    .novoMenu nav ul li a {
+        color: #fff;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
