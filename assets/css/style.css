@@ -401,6 +401,59 @@ ul {
     color: var(--cor-fonte-p);
 }
 
+.novoMenu {
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.linha2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto; 
+    padding: 0 20px;
+}
+
+.linha2 select {
+    padding: 5px;
+    border: 1px solid var(--cor-padrao);
+}
+
+.linha2 select:focus{
+    outline: none;
+}
+
+.paginacao {
+    width: fit-content;
+    margin: 0 auto 80px;
+}
+
+.paginacao span {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid var(--cor-padrao);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.paginacao span:hover {
+    background-color: var(--cor-padrao);
+    color: var(--cor-fonte);
+}
+
+.paginacao .ativo {
+    background-color: var(--cor-padrao);
+    color: var(--cor-fonte);
+    border-color: var(--cor-padrao);
+}
+
+
 /* Estilos para telas menores */
 
 @media only screen and (max-width: 800px) {
