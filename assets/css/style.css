@@ -407,24 +407,25 @@ ul {
 
     .navbar {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        padding: 20px;
-        position: relative; 
-        z-index: 1001; /* Fica acima de tudo */
-        background: transparent; /* Ou a cor que você quiser para a barra do topo */
+        align-items: center;
+        padding: 10px 20px;
+        position: relative; /* Isso é essencial */
+        background: #fff; /* Ou a cor de fundo do seu header original */
+        z-index: 1005; 
     }
 
     nav ul{
         position: absolute;
-        top: 100%;
+        top: 100%; /* Começa exatamente onde a navbar termina */
         left: 0;
         background: #000;
         width: 100%;
-        overflow: hidden;
         max-height: 0px;
-        transition: max-height 0.5s; 
-        z-index: 1000;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 1000; /* Fica abaixo dos ícones da navbar */
+        display: block; /* Garante que os itens fiquem em lista */
     }
 
     nav ul li{
@@ -442,7 +443,7 @@ ul {
         display: block;
         cursor: pointer;
         position: relative;
-        z-index: 1001;
+        z-index: 1010; /* Garante que ele fique no topo da pilha */
     }
 
     .menu-celular .carrinho {
