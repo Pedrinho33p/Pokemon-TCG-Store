@@ -26,7 +26,7 @@
                     </ul>
                 </nav>
 
-                    <a href="carrinho.html"><img src="assets/img/cart-outline.svg" alt="" width="30px" height="30px" class="carrinho"></a>
+                    <img src="assets/img/cart-outline.svg" alt="" width="30px" height="30px" class="carrinho">
 
                     <img src="assets/img/menu-outline.svg" alt="" class="menu-celular" onclick="menucelular()">
 
@@ -39,88 +39,42 @@
     </div>
     <!-- Fim Banner -->
 
-    <!-- Inicio Produtos em Destaque-->
+    <!-- Inicio Minha Conta -->
 
-     <div class="corpo-produtos">
+    <div class="minha-conta">
+        <div class="container">
+            <div class="linha">
+                <div class="col-2">
+                    <img src="assets/img/logo2.png" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="formulario">
+                        <div class="btn-form">
+                            <span onclick="Entrar()">Entrar</span>
+                            <span onclick="Cadastro()">Cadastro</span>
+                            <hr id="Indicador">
+                        </div>
 
-        <div class="linha2">
-            <h2>Todos os nossos Produtos</h2>
-            <select name="" id="">
-                <option value="">Mais Baratos</option>
-                <option value="">Mais Caros</option>
-                <option value="">Mais Vendidos</option>
-                <option value="">Lançamentos</option>
-            </select>
-        </div>
+                        <form action="" method="post" id="EntrarPainel">
+                            <input type="email" name="email" placeholder="Digite seu email">
+                            <input type="password" name="senha" placeholder="Digite sua senha">
+                            <button type="submit" name="Entrar" class="btn">Entrar</button>
+                            <a href="" title="">Esqueci minha senha!</a>
+                        </form>
 
-        <div class="linha">
-            <div class="col-4">
-                <a href="ver-produto.html">
-                <img src="assets/img/produto1.webp" alt="">
-                <hr>
-                <h4>Caixa de Booster - Megaevolução 1</h4>
-                <hr>
-                <p>R$ 298,88</p>
-                </a>
-            </div>
-            <div class="col-4">
-                <img src="assets/img/produto2.webp" alt="">
-                <hr>
-                <h4>Coleção Treinador Avançado - Megaevolução 2.5 - Heróis Excelsos</h4>
-                <hr>
-                <p>R$ 389,90</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/img/produto5.webp" alt="">
-                <hr>
-                <h4>Blister Triplo Megaevolução 1 - Drifloon</h4>
-                <hr>
-                <p>R$ 24,98</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/img/produto6.webp" alt="">
-                <hr>
-                <h4>(ING) Caixa de Booster - Megaevolução 2 - Fogo Fantasmagórico</h4>
-                <hr>
-                <p>R$ 2.194,95</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/img/produto8.webp" alt="">
-                <hr>
-                <h4>Pokemon BOX Coleçao Premium BLASTOISE-GX</h4>
-                <hr>
-                <p>R$ 1.500,00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/img/produto9.webp" alt="">
-                <hr>
-                <h4>(ING) Coleção Treinador Avançado - Escarlate e Violeta 10.5 - Raio Preto</h4>
-                <hr>
-                <p>R$ 799,99</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/img/produto10.webp" alt="">
-                <hr>
-                <h4>Coleção Treinador Avançado - Golpe Fusão - Mew</h4>
-                <hr>
-                <p>R$ 2.499,99</p>
+                        <form action="" method="post" id="CadastroPainel">
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                            <input type="email" name="email" placeholder="Digite seu email">
+                            <input type="password" name="senha" placeholder="Digite sua senha">
+                            <button type="submit" name="Cadastrar" class="btn">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!-- Inicio paginação -->
-
-        <div class="paginacao">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>&#8594;</span>
-        </div>
-
-        <!-- Fim paginação -->
-
-        </div>
-
+    <!-- Fim Minha Conta -->
 
     <!-- Inicio Rodapé-->
     <footer class="rodape">
@@ -168,6 +122,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 </html>
